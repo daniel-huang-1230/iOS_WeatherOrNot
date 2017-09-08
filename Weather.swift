@@ -9,7 +9,7 @@
 import Foundation
 
 
-// My custom Weather type to parse the JSON data from Dark Sky API
+// My own custom Weather type to process the JSON data from Dark Sky API
 struct Weather {
     
     let summary: String
@@ -63,6 +63,7 @@ struct Weather {
             var forecastArray :[Weather] = []
             if let data = data {
                 do {
+                    //here's where the FUN part begins
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
                     if let dailyForecasts = json["daily"] as? [String:Any]{
                         //go another layer deeper in JSON data
