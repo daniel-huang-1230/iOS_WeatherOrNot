@@ -9,7 +9,7 @@
 import Foundation
 
 
-
+// My custom Weather type to parse the JSON data from Dark Sky API
 struct Weather {
     
     let summary: String
@@ -84,6 +84,8 @@ struct Weather {
                     print(error.localizedDescription)
                     
                 }
+                
+                completion(forecastArray)   //!!!!DON'T FORGET to call the completion handler
             }
             
             
