@@ -86,7 +86,7 @@ class WeatherTableViewController: UITableViewController,UISearchBarDelegate {
         // Configure the cell...
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let weatherObj = forecastData[indexPath.row]
+        let weatherObj = forecastData[indexPath.section]
         
         cell.textLabel?.text = weatherObj.summary
         cell.detailTextLabel?.text = "\(Int(weatherObj.temperature)) °F"
