@@ -1,7 +1,7 @@
 # App Overview
 
 This weather application utilizes [Dark Sky API](https://darksky.net/dev/docs) to retrieve weather information asynchronously from the web.
-I followed **Brian Advent**'s 2 tutorials on youtube ([this](https://www.youtube.com/watch?v=_c0pAz3UPEs) and [this])(https://www.youtube.com/watch?v=doqtsIsbtqs) and implemented a custom Weather struct to successfully parse **JSON** data acquired from the web API and created my user interface. 
+I followed **Brian Advent**'s 2 tutorials on youtube ([this](https://www.youtube.com/watch?v=_c0pAz3UPEs) and [this](https://www.youtube.com/watch?v=doqtsIsbtqs)) and implemented a custom Weather struct to successfully parse **JSON** data acquired from the web API and created my user interface. 
 
 The app provides simple search feature that enables you to check up the weather of any city you would like.
 
