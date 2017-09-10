@@ -7,7 +7,7 @@ The app provides simple search feature that enables you to check up the weather 
 
 
 # Credit 
-All weather icons in this application are download from [VClouds](http://vclouds.deviantart.com/gallery/#/d2ynulp) and these free icons are for **NON-commercial** use only.  
+All weather icons in this application are downloaded from [VClouds](http://vclouds.deviantart.com/gallery/#/d2ynulp) and these free icons are for **NON-commercial** use only.  
 
 
 # Screenshot of the app
