@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CoreLocation
 
 // My own custom Weather type to process the JSON data from Dark Sky API
 struct Weather {
@@ -50,10 +50,13 @@ struct Weather {
     //Use my API key provided by Dark Sky
     static let basePath = "https://api.darksky.net/forecast/5e4c53e319f8b16dc837664e200c25a5/"
     
-    static func forecast(withLocation location: String, completion: @escaping ([Weather])->()) {
+    
+    
+    //the stactic function called by Weather struct; it will return an array of Weather objects
+    static func forecast(withLocation location: CLLocationCoordinate2D, completion: @escaping ([Weather])->()) {
         
         
-        let url = basePath + location
+        let url = basePath + "\(location.latitude),\(location.longitude)"
         
         let request = URLRequest(url:URL(string: url)!)  //create a url request
         
